@@ -1,0 +1,244 @@
+{
+  "keys": {}, 
+  "groups": {
+    "pluginmanager": {
+      "keys": {
+        "running-plugins": {
+          "type": "repr", 
+          "repr": "{u'rqt_image_view/ImageView': [2, 1], u'autonomy_image_view/ImageView': [2, 1]}"
+        }
+      }, 
+      "groups": {
+        "plugin__autonomy_image_view__ImageView__1": {
+          "keys": {}, 
+          "groups": {
+            "dock_widget__ImageViewWidget": {
+              "keys": {
+                "dockable": {
+                  "type": "repr", 
+                  "repr": "True"
+                }, 
+                "parent": {
+                  "type": "repr", 
+                  "repr": "None"
+                }, 
+                "dock_widget_title": {
+                  "type": "repr", 
+                  "repr": "u'Image View'"
+                }
+              }, 
+              "groups": {}
+            }, 
+            "plugin": {
+              "keys": {
+                "max_range": {
+                  "type": "repr", 
+                  "repr": "10.0"
+                }, 
+                "mouse_pub_topic": {
+                  "type": "repr", 
+                  "repr": "u'/yolo2/debug_image_mouse_left'"
+                }, 
+                "zoom1": {
+                  "type": "repr", 
+                  "repr": "True"
+                }, 
+                "dynamic_range": {
+                  "type": "repr", 
+                  "repr": "False"
+                }, 
+                "topic": {
+                  "type": "repr", 
+                  "repr": "u'/yolo2/debug_image'"
+                }, 
+                "publish_click_location": {
+                  "type": "repr", 
+                  "repr": "False"
+                }
+              }, 
+              "groups": {}
+            }
+          }
+        }, 
+        "plugin__autonomy_image_view__ImageView__2": {
+          "keys": {}, 
+          "groups": {
+            "dock_widget__ImageViewWidget": {
+              "keys": {
+                "dockable": {
+                  "type": "repr", 
+                  "repr": "True"
+                }, 
+                "parent": {
+                  "type": "repr", 
+                  "repr": "None"
+                }, 
+                "dock_widget_title": {
+                  "type": "repr", 
+                  "repr": "u'Image View (2)'"
+                }
+              }, 
+              "groups": {}
+            }, 
+            "plugin": {
+              "keys": {
+                "max_range": {
+                  "type": "repr", 
+                  "repr": "10.0"
+                }, 
+                "mouse_pub_topic": {
+                  "type": "repr", 
+                  "repr": "u'/human/debug/image_raw_mouse_left'"
+                }, 
+                "zoom1": {
+                  "type": "repr", 
+                  "repr": "True"
+                }, 
+                "dynamic_range": {
+                  "type": "repr", 
+                  "repr": "False"
+                }, 
+                "topic": {
+                  "type": "repr", 
+                  "repr": "u'/human/debug/image_raw'"
+                }, 
+                "publish_click_location": {
+                  "type": "repr", 
+                  "repr": "False"
+                }
+              }, 
+              "groups": {}
+            }
+          }
+        }, 
+        "plugin__rqt_image_view__ImageView__2": {
+          "keys": {}, 
+          "groups": {
+            "dock_widget__ImageViewWidget": {
+              "keys": {
+                "dockable": {
+                  "type": "repr", 
+                  "repr": "True"
+                }, 
+                "parent": {
+                  "type": "repr", 
+                  "repr": "None"
+                }, 
+                "dock_widget_title": {
+                  "type": "repr", 
+                  "repr": "u'Image View (2)'"
+                }
+              }, 
+              "groups": {}
+            }, 
+            "plugin": {
+              "keys": {
+                "max_range": {
+                  "type": "repr", 
+                  "repr": "10.0"
+                }, 
+                "mouse_pub_topic": {
+                  "type": "repr", 
+                  "repr": "u'/gesture/right_hand/cftld/debug_image_raw_mouse_left'"
+                }, 
+                "zoom1": {
+                  "type": "repr", 
+                  "repr": "False"
+                }, 
+                "dynamic_range": {
+                  "type": "repr", 
+                  "repr": "False"
+                }, 
+                "topic": {
+                  "type": "repr", 
+                  "repr": "u'/gesture/right_hand/cftld/debug_image_raw'"
+                }, 
+                "publish_click_location": {
+                  "type": "repr", 
+                  "repr": "False"
+                }
+              }, 
+              "groups": {}
+            }
+          }
+        }, 
+        "plugin__rqt_image_view__ImageView__1": {
+          "keys": {}, 
+          "groups": {
+            "dock_widget__ImageViewWidget": {
+              "keys": {
+                "dockable": {
+                  "type": "repr", 
+                  "repr": "True"
+                }, 
+                "parent": {
+                  "type": "repr", 
+                  "repr": "None"
+                }, 
+                "dock_widget_title": {
+                  "type": "repr", 
+                  "repr": "u'Image View'"
+                }
+              }, 
+              "groups": {}
+            }, 
+            "plugin": {
+              "keys": {
+                "max_range": {
+                  "type": "repr", 
+                  "repr": "10.0"
+                }, 
+                "mouse_pub_topic": {
+                  "type": "repr", 
+                  "repr": "u'/gesture/left_hand/cftld/debug_image_raw_mouse_left'"
+                }, 
+                "zoom1": {
+                  "type": "repr", 
+                  "repr": "False"
+                }, 
+                "dynamic_range": {
+                  "type": "repr", 
+                  "repr": "False"
+                }, 
+                "topic": {
+                  "type": "repr", 
+                  "repr": "u'/gesture/left_hand/cftld/debug_image_raw'"
+                }, 
+                "publish_click_location": {
+                  "type": "repr", 
+                  "repr": "False"
+                }
+              }, 
+              "groups": {}
+            }
+          }
+        }
+      }
+    }, 
+    "mainwindow": {
+      "keys": {
+        "geometry": {
+          "type": "repr(QByteArray.hex)", 
+          "repr(QByteArray.hex)": "QtCore.QByteArray('01d9d0cb0002000000000041000000180000077f0000043700000041000000180000077f0000043700000000000000000780')", 
+          "pretty-print": "     A     7 A     7     "
+        }, 
+        "state": {
+          "type": "repr(QByteArray.hex)", 
+          "repr(QByteArray.hex)": "QtCore.QByteArray('000000ff00000000fd00000001000000030000073f0000040afc0100000002fc00000000000003640000036400000364fc0200000002fb00000064006100750074006f006e006f006d0079005f0069006d006100670065005f0076006900650077005f005f0049006d0061006700650056006900650077005f005f0031005f005f0049006d006100670065005600690065007700570069006400670065007401000000000000024b0000024b0000024bfb0000005a007200710074005f0069006d006100670065005f0076006900650077005f005f0049006d0061006700650056006900650077005f005f0031005f005f0049006d0061006700650056006900650077005700690064006700650074010000024b000001bf0000005100fffffffc0000036a000003d50000036400000364fc0200000002fb00000064006100750074006f006e006f006d0079005f0069006d006100670065005f0076006900650077005f005f0049006d0061006700650056006900650077005f005f0032005f005f0049006d006100670065005600690065007700570069006400670065007401000000000000024b0000024b0000024bfb0000005a007200710074005f0069006d006100670065005f0076006900650077005f005f0049006d0061006700650056006900650077005f005f0032005f005f0049006d0061006700650056006900650077005700690064006700650074010000024b000001bf0000005100ffffff000006ce0000000000000004000000040000000800000008fc00000001000000030000000100000036004d0069006e0069006d0069007a006500640044006f0063006b00570069006400670065007400730054006f006f006c0062006100720000000000ffffffff0000000000000000')", 
+          "pretty-print": "                   d d d                                                           K K K                                                 K   Q               dautonomy_image_view__ImageView__2__ImageViewWidget          Zrqt_image_view__ImageView__2__ImageViewWidget                            6MinimizedDockWidgetsToolbar        "
+        }
+      }, 
+      "groups": {
+        "toolbar_areas": {
+          "keys": {
+            "MinimizedDockWidgetsToolbar": {
+              "type": "repr", 
+              "repr": "8"
+            }
+          }, 
+          "groups": {}
+        }
+      }
+    }
+  }
+}

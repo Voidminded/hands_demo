@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<launch>
+  <!--include file="$(find video_stream_opencv)/launch/camera.launch" /-->
+  <include file="$(find usb_cam)/launch/usb_cam-test.launch" />
+  <include file="$(find autonomy_human)/launch/autonomy_human.launch">
+    <arg name="param_file" value="$(find bebop_hri)/config/autonomy_human.yaml" />
+    <arg name="input_topic" value="camera/image_raw" />
+    <arg name="output" value="screen" />
+    <arg name="debug_mode" value="18" />
+    <arg name="start_paused" value="true" />
+  </include>
+  <node pkg="nodelet" type="nodelet" name="nodelet_manager" args="manager" output="screen"/>
+  <!--node pkg="cftld_ros" type="cftld_ros_node" name="cftld_ros_right_hand_nodelet" output="screen" respawn="true">
+    <remap from="image_raw" to="camera/image_raw" />
+    <remap from="init_roi" to="gesture/right_hand/cftld/init_roi" />
+    <remap from="reset" to="gesture/right_hand/cftld/reset" />
+    <remap from="track" to="gesture/right_hand/cftld/track" />
+    <remap from="debug_image" to="gesture/right_hand/cftld/debug_image_raw" />
+    <param name="tld_config_file" value="$(find cftld_ros)/config/cftld.cfg" />
+    <rosparam command="load" file="$(find cftld_ros)/config/default.yaml" />
+  </node>
+  <node pkg="cftld_ros" type="cftld_ros_node" name="cftld_ros_left_hand_nodelet" output="screen" respawn="true">
+    <remap from="image_raw" to="camera/image_raw" />
+    <remap from="init_roi" to="gesture/left_hand/cftld/init_roi" />
+    <remap from="reset" to="gesture/left_hand/cftld/reset" />
+    <remap from="track" to="gesture/left_hand/cftld/track" />
+    <remap from="debug_image" to="gesture/left_hand/cftld/debug_image_raw" />
+    <param name="tld_config_file" value="$(find cftld_ros)/config/cftld.cfg" />
+    <rosparam command="load" file="$(find cftld_ros)/config/default.yaml" />
+  </node-->
+  <node pkg="nodelet" type="nodelet" name="yolo2" args="load yolo2/Yolo2Nodelet nodelet_manager" output="screen" respawn="true">
+    <remap from="bebop/image_raw" to="camera/image_raw" />
+    <param name="confidence" value="0.5" />
+    <param name="nms" value="0.4" />
+  </node>
+  <node pkg="hands_demo" type="hands_demo_node" name="demo_node" output="screen" />
+  <node name="rqt_demo" type="rqt_gui" pkg="rqt_gui" args="--clear-config -f -l --perspective-file $(find hands_demo)/rqt/demo.perspective" output="log" />
+</launch>

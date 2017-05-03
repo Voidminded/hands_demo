@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<launch>
+  <node pkg="cftld_ros" type="cftld_ros_node" name="cftld_ros_right_hand_nodelet" output="screen" respawn="true">
+    <remap from="image_raw" to="camera/image_raw" />
+    <remap from="init_roi" to="gesture/right_hand/cftld/init_roi" />
+    <remap from="reset" to="gesture/right_hand/cftld/reset" />
+    <remap from="track" to="gesture/right_hand/cftld/track" />
+    <remap from="debug_image" to="gesture/right_hand/cftld/debug_image_raw" />
+    <param name="tld_config_file" value="$(find cftld_ros)/config/cftld.cfg" />
+    <rosparam command="load" file="$(find cftld_ros)/config/default.yaml" />
+  </node>
+  <node pkg="cftld_ros" type="cftld_ros_node" name="cftld_ros_left_hand_nodelet" output="screen" respawn="true">
+    <remap from="image_raw" to="camera/image_raw" />
+    <remap from="init_roi" to="gesture/left_hand/cftld/init_roi" />
+    <remap from="reset" to="gesture/left_hand/cftld/reset" />
+    <remap from="track" to="gesture/left_hand/cftld/track" />
+    <remap from="debug_image" to="gesture/left_hand/cftld/debug_image_raw" />
+    <param name="tld_config_file" value="$(find cftld_ros)/config/cftld.cfg" />
+    <rosparam command="load" file="$(find cftld_ros)/config/default.yaml" />
+  </node>
+</launch>
